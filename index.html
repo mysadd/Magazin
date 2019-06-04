@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<title> </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	<div>
+		<h1> Все товары по 3000 рублей </h1>
+		<div class="row">
+			<h2> Итого: </h2>
+			<h2 class="itog"> 0 </h2>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="row">
+			<div class="col-3">
+				<img src="img1.jpg" class="w-75">
+				<div class="container col-8">
+					<h5 class="mx-auto"> 3000руб </h5>
+					<button class="btn btn-success sony"> Купить SONY </button>
+				</div>
+			</div>
+			<div class="col-3">
+				<img src="img2.jpg" class="w-100">
+				<div class="container col-8">
+					<h5 class="mx-auto"> 3000руб </h5>
+					<button class="btn btn-success jbl"> Купить JBL </button>
+				</div>
+			</div>
+			<div class="col-3">
+				<img src="img3.jpg" class="w-100">
+				<div class="container col-8">
+					<h5 class="mx-auto"> 3000руб </h5>
+					<button class="btn btn-success jays"> Купить JAYS </button>
+				</div>
+			</div>
+			<div class="col-3">
+				<img src="img4.jpg" class="w-100">
+				<div class="container col-8">
+					<h5 class="mx-auto"> 3000руб </h5>
+					<button class="btn btn-success noname"> Купить NONAME </button>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+
+
+
+	<script type="text/javascript">
+		let summa = 0;
+		let check = function() {
+			summa = summa + 3000
+			document.querySelector(".itog").innerHTML = summa
+		}
+
+		document.querySelector(".sony").onclick = check
+
+		document.querySelector(".jbl").onclick = check
+
+		document.querySelector(".jays").onclick = check
+
+		document.querySelector(".noname").onclick = check
+
+	</script>
+</body>
+</html>
